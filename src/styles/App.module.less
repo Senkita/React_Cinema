@@ -1,0 +1,30 @@
+@import "./custom.less";
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: @textColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: @bgColor;
+
+  color: @textColor;
+  font-family: sans-serif;
+}
+
+@media (max-width: 960px) {
+  .main {
+    width: 960px;
+  }
+}

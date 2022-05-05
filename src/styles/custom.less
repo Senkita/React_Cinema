@@ -1,0 +1,20 @@
+@bgColor: #333333;
+@shadowColor: #2b2b2b;
+@secondaryShadowColor: #3b3b3b;
+@textColor: #a9abb1;
+
+@baseSize: 5px;
+
+// 新拟态
+// https://neumorphism.io/
+.bulge {
+  background-color: @bgColor;
+  box-shadow: @baseSize @baseSize @baseSize*2 @shadowColor,
+    -@baseSize -@baseSize @baseSize*2 @secondaryShadowColor;
+}
+
+.recess {
+  background-color: @bgColor;
+  box-shadow: inset @baseSize @baseSize @baseSize*2 @shadowColor,
+    inset -@baseSize -@baseSize @baseSize*2 @secondaryShadowColor;
+}

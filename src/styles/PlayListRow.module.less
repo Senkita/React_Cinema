@@ -1,0 +1,32 @@
+@import "./custom.less";
+
+.itemRow:extend(.bulge) {
+  margin-top: @baseSize*2;
+  margin-bottom: @baseSize*2;
+  line-height: @baseSize*6;
+  overflow-x: hidden;
+  padding: 0 @baseSize;
+
+  .item {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  &:hover:extend(.recess) {
+    cursor: pointer;
+    .item {
+      animation: scroll 8s infinite linear;
+    }
+  }
+}
+
+@keyframes scroll {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+}
