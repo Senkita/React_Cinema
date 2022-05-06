@@ -2,7 +2,7 @@
  * @Description : 播放列表
  * @Author      : Senkita
  * @Date        : 2022-05-03 10:35:32
- * @LastEditTime: 2022-05-05 22:08:22
+ * @LastEditTime: 2022-05-06 12:14:07
  * @LastEditors : Senkita
  */
 import { useEffect } from "react";
@@ -14,7 +14,7 @@ import PlayListRow from "./PlayListRow";
 
 const PlayList: () => JSX.Element = (): JSX.Element => {
   useEffect((): void => {
-    fetch("/api")
+    fetch("http://localhost:2333" + "/api")
       .then((res: Response): Promise<IPlayListState> => res.json())
       .then((data: IPlayListState): void => {
         PlayListStore.videos = data["videos"];

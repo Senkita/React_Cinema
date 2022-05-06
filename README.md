@@ -1,4 +1,4 @@
-# ReactCinema
+# React_Cinema
 
 ## Introduction
 
@@ -9,10 +9,9 @@
 ## Usage
 
 ```bash
-cd ReactCinema
+cd React_Cinema
 pnpm i
 
-pnpm serve # start Koa2 server `pnpm pkg` for package node
 pnpm dev # `pnpm build` for production
 ```
 
@@ -27,8 +26,7 @@ pnpm dev # `pnpm build` for production
 ## References
 
 - [React](https://reactjs.org/)
-- [Valtio](https://valtio.pmnd.rs/)
-- [Koa](https://koajs.com/)
+- [valtio](https://valtio.pmnd.rs/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [pnpm](https://pnpm.io/)

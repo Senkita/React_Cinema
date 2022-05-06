@@ -9,16 +9,4 @@ export default defineConfig({
       scopeBehaviour: "local",
     },
   },
-  base: "./",
-  publicDir: "../",
-  server: {
-    proxy: {
-      "/api": {
-        changeOrigin: true,
-        target: "http://localhost:2333",
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
-  },
 });
